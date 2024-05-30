@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random URL Saver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Random URL Saver</h3>
+    <button id="saveButton">Save Random URL</button>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
+        // Your Firebase configuration and code goes here
+        const firebaseConfig = {
+            apiKey: "AIzaSyBTPu0JuJpsxHdozuK2XSl4dWnkXoLgnP0",
+            authDomain: "url-saver-extension.firebaseapp.com",
+            projectId: "url-saver-extension",
+            storageBucket: "url-saver-extension.appspot.com",
+            messagingSenderId: "896539202531",
+            appId: "1:896539202531:web:bb169cb60e0d64028206d6",
+            measurementId: "G-B1KL7T46BL"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const saveButton = document.getElementById('saveButton');
+
+        saveButton.addEventListener('click', () => {
+            const randomTitle = "Random Title";
+            const randomURL = "https://www.example.com";
+
+            addDoc(collection(db, 'urls'), {
+                title: randomTitle,
+                url: randomURL
+            })
+                .then((docRef) => {
+                    console.log('URL saved with ID: ', docRef.id);
+                })
+                .catch((error) => {
+                    console.error('Error adding document: ', error);
+                });
+        });
+    </script>
+
+</body>
+
+</html>

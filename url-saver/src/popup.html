@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LinkVault</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Saved URLs</h3>
+    <ul id="urlList"></ul>
+    <button id="saveButton">Save Current Tab</button>
+
+</body>
+<script type="module" src="popup.js"></script>
+
+</html>
+
+<!-- Last working one 
+        "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+    } 
+-->
