@@ -9,15 +9,7 @@
 
 //     // Your web app's Firebase configuration
 //     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-//     const firebaseConfig = {
-//         apiKey: "AIzaSyBTPu0JuJpsxHdozuK2XSl4dWnkXoLgnP0",
-//         authDomain: "url-saver-extension.firebaseapp.com",
-//         projectId: "url-saver-extension",
-//         storageBucket: "url-saver-extension.appspot.com",
-//         messagingSenderId: "896539202531",
-//         appId: "1:896539202531:web:bb169cb60e0d64028206d6",
-//         measurementId: "G-B1KL7T46BL"
-//     };
+
 
 //     // Initialize Firebase
 //     // const app = initializeApp(firebaseConfig);
@@ -83,15 +75,7 @@
 // import { getFirestore, collection, addDoc } from "./firebase/firebase-firestore.js";
 
 // // // Your web app's Firebase configuration
-// const firebaseConfig = {
-//     apiKey: "AIzaSyBTPu0JuJpsxHdozuK2XSl4dWnkXoLgnP0",
-//     authDomain: "url-saver-extension.firebaseapp.com",
-//     projectId: "url-saver-extension",
-//     storageBucket: "url-saver-extension.appspot.com",
-//     messagingSenderId: "896539202531",
-//     appId: "1:896539202531:web:bb169cb60e0d64028206d6",
-//     measurementId: "G-B1KL7T46BL"
-// };
+
 
 // // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
@@ -157,13 +141,12 @@ import { getFirestore, collection, addDoc } from "../firebase/firebase-firestore
 
 // // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBTPu0JuJpsxHdozuK2XSl4dWnkXoLgnP0",
-    authDomain: "url-saver-extension.firebaseapp.com",
-    projectId: "url-saver-extension",
-    storageBucket: "url-saver-extension.appspot.com",
-    messagingSenderId: "896539202531",
-    appId: "1:896539202531:web:bb169cb60e0d64028206d6",
-    measurementId: "G-B1KL7T46BL"
+    apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_STORAGE_BUCKET",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID",
 };
 
 // Initialize Firebase
